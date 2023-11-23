@@ -10,7 +10,7 @@ fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(30,15))
 
 #Diagram Pie
 ax1.pie(values, labels=labels, autopct='%1.1f%%')
-ax1.set_title('Diagram Pie Ranking Aplikasi Pemesan Ojek Online')
+ax1.set_title('Diagram Pie Ranking Aplikasi Pemesan Ojek Online') 
 
 #Diagram Batang
 ax2.bar(x, y)

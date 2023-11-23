@@ -299,19 +299,19 @@ def main(page: ft.Page):
     )
     tittle4 = ft.Container(
         alignment=ft.alignment.center, margin=5,
-        content=ft.Text("D. Tabel ALternatif Perbandingan Ketersediaan Driver",
+        content=ft.Text("E. Tabel ALternatif Perbandingan Ketersediaan Driver",
                         font_family="Impact",
                         color=ft.colors.WHITE)
     )
     tittle5 = ft.Container(
         alignment=ft.alignment.center, margin=5,
-        content=ft.Text("E. Tabel ALternatif Perbandingan Metode Pembayaran",
+        content=ft.Text("F. Tabel ALternatif Perbandingan Metode Pembayaran",
                         font_family="Impact",
                         color=ft.colors.WHITE)
     )
     tittle6 = ft.Container(  
         alignment=ft.alignment.center, margin=5,
-        content=ft.Text("F. Tabel ALternatif Perbandingan User Friendly",
+        content=ft.Text("G. Tabel ALternatif Perbandingan User Friendly",
                         font_family="Impact",
                         color=ft.colors.WHITE)
     )
@@ -322,29 +322,6 @@ def main(page: ft.Page):
                         color=ft.colors.YELLOW )
     )
     
-      
-#HASIL PERANGKINGAN
-    hasil7 = ft.Container(
-        alignment=ft.alignment.center,
-        content=ft.DataTable(
-            column_spacing=40,
-            columns=[
-                ft.DataColumn(ft.Text("Gojek")),
-                ft.DataCell(ft.Text(f":  {gojek:.2f}")),
-            ],
-            rows=[
-                ft.DataRow(
-                    cells=[
-                        ft.DataCell(ft.Text("Grab")),
-                         ft.DataCell(ft.Text(f":  {grab:.2f}")),
-                    ],
-                ),
-                
-            ],
-            
-        ),
-
-    )
     #hasil consistency ratio tabel kriteria utama
     hasil = ft.Container(
         alignment=ft.alignment.center,
@@ -893,7 +870,8 @@ def main(page: ft.Page):
              tittle3, data3, spasi3, a, hasil3,
              tittle4, data4, spasi4, a, hasil4,
              tittle5, data5, spasi5, a, hasil5,
-             tittle6, data6, spasi6, a, hasil6, tittle7, rank
+             tittle6, data6, spasi6, a, hasil6, 
+             tittle7, rank
              )
     #page.add(rank)
        
